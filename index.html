@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tutoring Services — Mini UI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="c-navbar">
+      <div class="wrap c-navbar__inner">
+        <div class="c-navbar__brand">Tutoring Services</div>
+        <nav class="c-navbar__links" aria-label="Primary navigation">
+          <a class="c-link" href="#services">Services</a>
+          <a class="c-link" href="#pricing">Pricing</a>
+          <a class="c-link" href="#testimonials">Testimonials</a>
+          <a class="c-link" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap stack" id="top">
+      <!-- Hero -->
+      <section class="section stack">
+        <header class="section__head">
+          <h1 class="h1">Personalized tutoring that builds confidence</h1>
+          <p class="muted">
+            Step-by-step math support for middle school and Algebra I.
+          </p>
+        </header>
+
+        <div class="row wrap-row">
+          <a class="c-btn c-btn--primary" href="#contact">Book a free consult</a>
+          <a class="c-btn c-btn--secondary" href="#services">View services</a>
+          <span class="c-badge c-badge--success">Now enrolling</span>
+        </div>
+
+        <div class="c-alert c-alert--info" role="status">
+          <strong>Note:</strong> Evening and weekend spots fill quickly.
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="section stack" id="services">
+        <header class="section__head">
+          <h2 class="h2">Services</h2>
+          <p class="muted">Support tailored to each student’s needs.</p>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="c-card stack">
+            <h3 class="h3">Homework Help</h3>
+            <p class="muted">
+              Get unstuck and understand the steps behind each problem.
+            </p>
+            <span class="c-badge c-badge--info">Popular</span>
+          </article>
+
+          <article class="c-card stack">
+            <h3 class="h3">Skill Building</h3>
+            <p class="muted">
+              Strengthen foundations in equations, functions, and problem-solving.
+            </p>
+            <span class="c-badge c-badge--success">Growth focused</span>
+          </article>
+
+          <article class="c-card stack">
+            <h3 class="h3">Test Prep</h3>
+            <p class="muted">
+              Targeted practice, pacing strategies, and feedback.
+            </p>
+            <span class="c-badge c-badge--warning">Time sensitive</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section class="section stack" id="pricing">
+        <header class="section__head">
+          <h2 class="h2">Pricing</h2>
+          <p class="muted">Simple options for different goals.</p>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="c-card stack">
+            <h3 class="h3">Single Session</h3>
+            <p class="muted">$60 / 60 minutes</p>
+            <a class="c-btn c-btn--primary" href="#contact">Choose</a>
+          </article>
+
+          <article class="c-card stack">
+            <h3 class="h3">Weekly Plan</h3>
+            <p class="muted">$220 / 4 sessions</p>
+            <span class="c-badge c-badge--success">Best value</span>
+            <a class="c-btn c-btn--primary" href="#contact">Choose</a>
+          </article>
+
+          <article class="c-card stack">
+            <h3 class="h3">Test Prep Pack</h3>
+            <p class="muted">$300 / 6 sessions</p>
+            <a class="c-btn c-btn--primary" href="#contact">Choose</a>
+          </article>
+        </div>
+
+        <div class="c-alert c-alert--success" role="status">
+          <strong>Tip:</strong> Weekly sessions often lead to faster improvement.
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section stack" id="testimonials">
+        <header class="section__head">
+          <h2 class="h2">What families say</h2>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="c-card stack">
+            <p class="muted">
+              “My child finally understands equations and feels confident again.”
+            </p>
+            <p class="muted"><strong>— Maria L., Parent</strong></p>
+          </article>
+
+          <article class="c-card stack">
+            <p class="muted">
+              “Clear explanations and focused practice made a big difference.”
+            </p>
+            <p class="muted"><strong>— James R., Guardian</strong></p>
+          </article>
+
+          <article class="c-card stack">
+            <p class="muted">
+              “Test prep sessions helped me feel ready and less stressed.”
+            </p>
+            <p class="muted"><strong>— Alex T., Student</strong></p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section stack" id="contact">
+        <header class="section__head">
+          <h2 class="h2">Contact</h2>
+          <p class="muted">Send a message and we’ll follow up.</p>
+        </header>
+
+        <form class="c-card stack">
+          <div class="c-field">
+            <label class="c-label" for="student">Student name</label>
+            <input class="c-input" id="student" type="text" placeholder="Student name" />
+          </div>
+
+          <div class="c-field">
+            <label class="c-label" for="grade">Grade</label>
+            <input class="c-input" id="grade" type="text" placeholder="Grade" />
+          </div>
+
+          <div class="c-field">
+            <label class="c-label" for="email">Email</label>
+            <input
+              class="c-input c-input--error"
+              id="email"
+              type="email"
+              placeholder="name@email.com"
+              aria-invalid="true"
+            />
+            <p class="help help--error">Please enter a valid email.</p>
+          </div>
+
+          <div class="row wrap-row">
+            <a class="c-btn c-btn--primary" href="#demo-modal">Send message</a>
+            <button class="c-btn c-btn--secondary" type="reset">Clear</button>
+            <button class="c-btn c-btn--primary" type="button" disabled>
+              Disabled example
+            </button>
+          </div>
+
+          <div class="c-alert c-alert--danger" role="alert">
+            <strong>Error:</strong> Please fix the highlighted fields.
+          </div>
+        </form>
+      </section>
+
+      <footer class="footer">
+        <p class="muted">Built with pure CSS and reusable components.</p>
+      </footer>
+    </main>
+
+    <!-- Modal -->
+    <div class="c-modal" id="demo-modal" role="dialog" aria-modal="true">
+      <a class="c-modal__backdrop" href="#contact" aria-label="Close"></a>
+
+      <div class="c-modal__panel">
+        <div class="row between">
+          <h3 class="h3">Message received</h3>
+          <a class="iconbtn" href="#contact" aria-label="Close">✕</a>
+        </div>
+
+        <p class="muted">
+          Thanks for reaching out, we'll get back to you shortly.
+        </p>
+
+        <div class="row wrap-row">
+          <a class="c-btn c-btn--primary" href="#contact">Close</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
